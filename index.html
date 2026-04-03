@@ -1,23 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Hi, I'm Anand 👋</h1>
-  <p>Welcome to my portfolio website</p>
 
-  <h2>Skills</h2>
+<!-- NAVBAR -->
+<nav>
+  <h2>MyPortfolio</h2>
   <ul>
-    <li>Marketing</li>
-    <li>AI Tools</li>
-    <li>Web Development</li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#creative">Creative</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
+</nav>
 
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Anand 👋</h1>
+    <p>Aspiring AI Developer | Creative Writer</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am passionate about AI, technology, and creative writing. I enjoy solving problems and building meaningful solutions.</p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Educational Journey</h2>
+  <div class="card">
+    <h3>ABC School</h3>
+    <p>Grade 10 - IGCSE</p>
+    <p>Achievements: Top 5 in class</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Marketing</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
-  <p>IGCSE Examiner App</p>
+  <div class="card">
+    <h3>IGCSE Examiner App</h3>
+    <p>AI-based grading system using OpenAI</p>
+  </div>
+</section>
 
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card">AI Certification - 2024</div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <h2>Events</h2>
+  <div class="card">Tech Workshop - Learned Python Basics</div>
+</section>
+
+<!-- CREATIVE -->
+<section id="creative">
+  <h2>Creative Work</h2>
+  <div class="card">
+    <h3>My Poem</h3>
+    <p onclick="toggleText(this)">Click to read more...</p>
+    <p class="hidden">A deep poem about life and silence...</p>
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests">
+  <h2>Interests</h2>
+  <div class="grid">
+    <div class="card">📚 Reading</div>
+    <div class="card">💻 Coding</div>
+    <div class="card">✍️ Writing</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
